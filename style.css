@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(138, 137, 136);
+    color: white;
+}
+.Calculatrice{
+    background-color: black;
+    border-radius: 15px;
+    width: 400px;
+    padding: 20px;
+}
+.texte{
+    border-radius: 50%;
+    background-color: rgb(253, 219, 178);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.ecran{
+    background-color: gray;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    width: 95%;
+    color: white;
+    text-align: right;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.boutons{
+    display: grid;/*pour mettre des grilles comme des matrices*/
+    grid-template-columns: repeat(4,1fr);/*pour repeter les nombres de colonnne*/
+    gap: 15px;
+}
+button{
+    border-radius: 50px;
+    height: 75px;
+    width: 75px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.gray{
+    background-color: rgb(151, 149, 149);
+}
+.orange{
+    background-color: orange;
+    color: white;
+}
+.chiffre{
+    color: white;
+    background-color: rgb(53, 52, 52);
+}
+.chiffre0{
+    grid-column: span 2; /*pour prendre les colonne*/
+    width: 88%;
+    text-align: left;
+    padding-left: 25px;
+    border-radius: 50px;
+    background-color: rgb(53, 52, 52);
+    color: aliceblue;
+}
+.gray:hover{
+    background-color: aliceblue;
+}
+.orange:hover{
+    background-color: rgb(109, 86, 43);
+}
+.chiffre:hover{
+    background-color: rgb(168, 168, 168);
+}
+.chiffre0:hover{
+    background-color: rgb(168, 168, 168);
+}
